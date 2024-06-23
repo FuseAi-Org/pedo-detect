@@ -1,7 +1,6 @@
 from enum import Enum
 from datetime import datetime
 
-# Considering only text rn, but in the future, we may need this
 class MessageType(Enum):
     TEXT = "text"
     IMAGE = "image"

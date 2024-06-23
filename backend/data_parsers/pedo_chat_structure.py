@@ -8,7 +8,6 @@ class Message():
 
     def __init__(self, line_num: int, author_id: int, timestamp: str, content: str):
         debug("START")
-        self.id = id
         self.line_num = line_num
         self.author_id = author_id
         self.content = content

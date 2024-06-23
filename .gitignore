@@ -1,0 +1,14 @@
+# Virtual Env
+venv/
+
+# Zip Files
+# *.zip
+*.DS_Store
+
+/unzipped-data/chris-hansen-data/
+/unzipped-data/parsed-pedo-chat-data/
+/unzipped-data/raw-pedo-chat-data/
+
+# pycache
+**/__pycache__/
+*.pyc

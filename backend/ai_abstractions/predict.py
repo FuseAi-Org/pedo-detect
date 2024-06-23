@@ -1,6 +1,8 @@
 from typing import Dict
 import numpy as np
 
+THRES = 0.3
+
 def predict(flag_weights: Dict, account_weights: Dict):
     keys = list(flag_weights.keys())
     
@@ -26,6 +28,10 @@ def dot_product(flag_vector, account_vector):
     print("DOT PRODUCT: ", np.dot(flag_vector, account_vector))
     print("MAX SCORE: ", MAX_SCORE)
     return np.dot(flag_vector, account_vector) / MAX_SCORE
+
+def classify(flag_vector, account_vector):
+    score = predict(flag_vector, account_vector)
+    return score > THRES
 
 def weighted_average(flag_vector, account_vector):
     total_weight = sum(flag_vector)

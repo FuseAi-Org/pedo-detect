@@ -36,49 +36,19 @@ SEARCH_AGENT = (
     | OpenAIToolsAgentOutputParser()
 )
 
-#def get_search_agent_executor(identifier: str, search_type: str):    
-    #agent = (
-        #{
-            #"input": lambda x: x["input"],
-            #"agent_scratchpad": lambda x: format_to_openai_tool_messages(
+def get_search_agent_executor(identifier: str, search_type: str):    
+    agent = (
+        {
+            "input": lambda x: x["input"],
+            "agent_scratchpad": lambda x: format_to_openai_tool_messages(
                 #x["intermediate_steps"]
-            #),
-        #}
-        #| prompt
-        #| GPT4O.bind_tools([get_search(identifier, search_type)])
-        #| OpenAIToolsAgentOutputParser()
-    #)
-    #return AgentExecutor(agent=agent, tools=[get_search(identifier, search_type)], verbose=True)
-
-# get search agent executor for episode search
-def get_search_agent_executor(identifier: str):
-    agent = (
-        {
-            "input": lambda x: x["input"],
-            "agent_scratchpad": lambda x: format_to_openai_tool_messages(
-                x["intermediate_steps"]
             ),
         }
         | prompt
-        | GPT4O.bind_tools([get_search(identifier, "episode")])
+        | GPT4O.bind_tools([get_search(identifier, search_type)])
         | OpenAIToolsAgentOutputParser()
     )
-    return AgentExecutor(agent=agent, tools=[get_search(identifier, "episode")], verbose=True)
-
-# get search agent executor for conversation search
-def get_search_agent_executor_for_chat(identifier: str):    
-    agent = (
-        {
-            "input": lambda x: x["input"],
-            "agent_scratchpad": lambda x: format_to_openai_tool_messages(
-                x["intermediate_steps"]
-            ),
-        }
-        | prompt
-        | GPT4O.bind_tools([get_search(identifier, "conversation")])
-        | OpenAIToolsAgentOutputParser()
-    )
-    return AgentExecutor(agent=agent, tools=[get_search(identifier, "conversation")], verbose=True)
+    return AgentExecutor(agent=agent, tools=[get_search(identifier, search_type)], verbose=True)
 
 def get_search_agent_executor_for_chat(identifier: str, search_type: str):    
     agent = (

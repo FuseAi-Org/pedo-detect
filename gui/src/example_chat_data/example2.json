@@ -1,0 +1,22 @@
+[
+    { "user": "f2dc220fb462b94e83d47c9a3ae8b441", "text": "Hi" },
+    { "user": "38b4add4c9e8c1856f3b6279e0df56c8", "text": "hi" },
+    { "user": "f2dc220fb462b94e83d47c9a3ae8b441", "text": "Another build error, what occours with libiconv? Trying to build mplayer SVN under DragonFly: <a href=\"http://sh.nu/p/3278\">http://sh.nu/p/3278</a>" },
+    { "user": "f2dc220fb462b94e83d47c9a3ae8b441", "text": "Anyone having the same error under NetBSD too?" },
+    { "user": "f2dc220fb462b94e83d47c9a3ae8b441", "text": "Why libiconv is so fscking faulty? :P" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "doesn't look like a libiconv issue" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "the linker just can't find the right libs" },
+    { "user": "cc928348509eee40e33231a524f2b3fc", "text": "hi there" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "hivmm" },
+    { "user": "f2dc220fb462b94e83d47c9a3ae8b441", "text": "Nodsu: How to fix it?" },
+    { "user": "f2dc220fb462b94e83d47c9a3ae8b441", "text": "Someone said me &quot;link it explicitly against -liconv or force /usr/include before /usr/pkg/include in the search path&quot;" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "well yeah" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "do that :)" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "first you have to make sure you pick the right libiconv" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "there's iconv in netbsd base and in pkgsrc too" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "and you can't mix em" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "so you'd have to check the config logs to see which iconf was configured" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "and then give the right path for the linker" },
+    { "user": "ed5dd9d10388fc6e54cc32959e4c54ad", "text": "*iconv" }
+  ]
+  

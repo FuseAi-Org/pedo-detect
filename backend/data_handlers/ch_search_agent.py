@@ -55,6 +55,7 @@ def get_search_agent_executor_for_chat(episode: int):
     return AgentExecutor(agent=agent, tools=[get_search(episode)], verbose=True)
 
 agent_executor = AgentExecutor(agent=SEARCH_AGENT, tools=[get_search(4)], verbose=True)
+
 # output = list(agent_executor.stream({"input": "Is Speaker 3 a pedo?"}))
 # for i in range(len(output)):
 #     print(f"Output {i}:")

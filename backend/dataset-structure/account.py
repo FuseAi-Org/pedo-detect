@@ -2,7 +2,6 @@ from typing import List, Dict
 
 from conversation import Conversation
 from ..ai_abstractions.flags import FLAGS
-from ..data_handlers.structured_agent import ConfidenceAgent
 
 # ASSUPTION: Chat history is List[Tuple(username, text)]
 class Account:
@@ -19,6 +18,3 @@ class Account:
         # Update the account flags with the new set of flags 
         if self.is_pedo:
             pass
-
-    def generate_account_weights(self, chat_history):
-

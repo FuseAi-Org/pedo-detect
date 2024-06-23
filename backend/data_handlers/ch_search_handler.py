@@ -29,7 +29,7 @@ def load_faiss_index(index_file: str, metadata_file: str):
     embedding_function = OpenAIEmbeddings()
     return FAISS(index=index, docstore=docstore, index_to_docstore_id={i: i for i in range(len(documents))}, embedding_function=embedding_function)
 
-def search_episode(episode: int, query: str): 
+def search_episode(episode: int, query: str):
     text_file, index_file, metadata_file, speakers_file = episode_to_filepaths(episode)
     index = load_faiss_index(index_file, metadata_file)
     embedding_function = OpenAIEmbeddings()

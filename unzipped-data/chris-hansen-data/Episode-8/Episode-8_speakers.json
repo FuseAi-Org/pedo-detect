@@ -1,0 +1,292 @@
+[
+    {
+        "speaker_id": 0,
+        "chunk_ids": [
+            0,
+            1,
+            4,
+            6,
+            11,
+            20,
+            21,
+            22
+        ]
+    },
+    {
+        "speaker_id": 1,
+        "chunk_ids": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            9,
+            12,
+            13,
+            14,
+            26
+        ]
+    },
+    {
+        "speaker_id": 2,
+        "chunk_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+        ]
+    },
+    {
+        "speaker_id": 3,
+        "chunk_ids": [
+            0,
+            1,
+            9,
+            10,
+            11,
+            12,
+            20,
+            21,
+            22,
+            23
+        ]
+    },
+    {
+        "speaker_id": 4,
+        "chunk_ids": [
+            0,
+            14,
+            26
+        ]
+    },
+    {
+        "speaker_id": 5,
+        "chunk_ids": [
+            0,
+            3,
+            4,
+            5,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            22
+        ]
+    },
+    {
+        "speaker_id": 6,
+        "chunk_ids": [
+            0,
+            14,
+            26
+        ]
+    },
+    {
+        "speaker_id": 7,
+        "chunk_ids": [
+            1
+        ]
+    },
+    {
+        "speaker_id": 8,
+        "chunk_ids": [
+            2
+        ]
+    },
+    {
+        "speaker_id": 9,
+        "chunk_ids": [
+            4,
+            9,
+            14,
+            25
+        ]
+    },
+    {
+        "speaker_id": 10,
+        "chunk_ids": [
+            25,
+            26
+        ]
+    },
+    {
+        "speaker_id": 11,
+        "chunk_ids": [
+            5,
+            21
+        ]
+    },
+    {
+        "speaker_id": 12,
+        "chunk_ids": [
+            5
+        ]
+    },
+    {
+        "speaker_id": 13,
+        "chunk_ids": [
+            5,
+            6,
+            7,
+            12
+        ]
+    },
+    {
+        "speaker_id": 14,
+        "chunk_ids": [
+            5,
+            16
+        ]
+    },
+    {
+        "speaker_id": 15,
+        "chunk_ids": [
+            5
+        ]
+    },
+    {
+        "speaker_id": 16,
+        "chunk_ids": [
+            5
+        ]
+    },
+    {
+        "speaker_id": 17,
+        "chunk_ids": [
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "speaker_id": 18,
+        "chunk_ids": [
+            9
+        ]
+    },
+    {
+        "speaker_id": 19,
+        "chunk_ids": [
+            10,
+            15,
+            16,
+            22
+        ]
+    },
+    {
+        "speaker_id": 20,
+        "chunk_ids": [
+            10
+        ]
+    },
+    {
+        "speaker_id": 21,
+        "chunk_ids": [
+            10
+        ]
+    },
+    {
+        "speaker_id": 22,
+        "chunk_ids": [
+            14
+        ]
+    },
+    {
+        "speaker_id": 23,
+        "chunk_ids": [
+            15
+        ]
+    },
+    {
+        "speaker_id": 24,
+        "chunk_ids": [
+            15,
+            22
+        ]
+    },
+    {
+        "speaker_id": 25,
+        "chunk_ids": [
+            16,
+            17,
+            18,
+            19
+        ]
+    },
+    {
+        "speaker_id": 26,
+        "chunk_ids": [
+            17,
+            18
+        ]
+    },
+    {
+        "speaker_id": 27,
+        "chunk_ids": [
+            18,
+            19,
+            20
+        ]
+    },
+    {
+        "speaker_id": 28,
+        "chunk_ids": [
+            20
+        ]
+    },
+    {
+        "speaker_id": 29,
+        "chunk_ids": [
+            20,
+            22
+        ]
+    },
+    {
+        "speaker_id": 30,
+        "chunk_ids": [
+            21
+        ]
+    },
+    {
+        "speaker_id": 31,
+        "chunk_ids": [
+            23,
+            24,
+            25
+        ]
+    },
+    {
+        "speaker_id": 32,
+        "chunk_ids": [
+            25,
+            26
+        ]
+    }
+]

@@ -1,10 +1,12 @@
-from langchain_core.documents import Document
-from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAIEmbeddings
-from typing import List, Dict
 import os
 import json
 import faiss
+
+from typing import List, Dict
+from langchain_core.documents import Document
+from langchain_community.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings
+
 from backend.ai_abstractions.ai_models import set_keys
 set_keys()
 

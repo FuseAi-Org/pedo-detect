@@ -37,6 +37,7 @@ def weighted_average(flag_vector, account_vector):
     print("WEIGHTED AVERAGE: ", confidence)
     return confidence
 
+# EXAMPLE USAGE
 FLAGS = {
     "Requesting personal photos/videos": 0.9,
     "Initiating conversations with minors": 0.8,

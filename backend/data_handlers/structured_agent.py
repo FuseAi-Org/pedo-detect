@@ -1,5 +1,5 @@
 from langchain_core.pydantic_v1 import BaseModel, Field
-from .ch_search_agent import get_search_agent_executor
+from .updated_ch_search_agent import get_search_agent_executor
 from backend.ai_abstractions.ai_models import GPT4O
 from backend.utils.debug_mode import debug
 from typing import Optional
@@ -40,7 +40,7 @@ class ConfidenceResponse(BaseModel):
     confidence: Optional[float] = Field(default=0.5, description = "The confidence level of the final answer between 0 and 1 (0 = low confidence, 1 = high confidence)")
 
 class ConfidenceAgent:
-    def __init__(self, episode: int):
+    def __init__(self, episode: int=1):
         self.agent_executor = get_search_agent_executor(episode)
     
     def get_response(self, query: str):
